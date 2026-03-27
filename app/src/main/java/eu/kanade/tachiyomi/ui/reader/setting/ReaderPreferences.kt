@@ -116,6 +116,10 @@ class ReaderPreferences(
         false,
     )
 
+    fun combinedPagesPaged() = preferenceStore.getBoolean("pref_combined_pages", false)
+
+    fun combinedPagesShowCoverPage() = preferenceStore.getBoolean("pref_combined_pages_show_cover", true)
+
     // endregion
 
     // region Color filter
